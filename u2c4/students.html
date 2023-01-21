@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Students</title>
+    <style>
+      .navbar{
+            width: 90%;
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: space-around;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-bottom: 50px;   
+        }
+
+        table{
+            margin: auto;
+            width: 90%;
+            margin-top:  50px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        thead{
+            background-color: #018080;
+            color: white;
+            font-size: 25px;
+        }
+
+        #filter{
+            width: 10%;
+            margin: auto;
+            font-size: 20px;
+            margin-left: 45%;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="./index.html"><h1>Add Students</h1></a>
+      <a href="./students.html"><h1>Students Database</h1></a>
+      <a href="./admitted.html"><h1>Admitted</h1></a>
+      <a href="./rejected.html"><h1>Rejected</h1></a>
+    </div>
+    <select id="filter">
+      <option value="">Filter By Course</option>
+      <option value="all">All</option>
+      <option value="Web-Development">Web-Development</option>
+      <option value="Android-Development">Android-Development</option>
+      <option value="Data-Analitics">Data-Analitics</option>
+    </select>
+    <table cellspacing="0">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Course</th>
+          <th>Gender</th>
+          <th>Phone</th>
+          <th>Admitted</th>
+          <th>Rejected</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Table Rows should be appended Here  -->
+      </tbody>
+    </table>
+  </body>
+  <script src="./students.js"></script>
+</html>
