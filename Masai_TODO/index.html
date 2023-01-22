@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/skeleton.css">
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Employees Database</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <h1>Title here</h1>
+          <p>Description here if required.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="columns four sidebar-one" id="sidebar-one">
+          <h4>Actions</h4>
+          <button id="fetch-employees"  class="u-full-width button button-primary" >Fetch Employees</button>
+          <hr>
+
+          <h4>Add Employees</h4>
+          <input type="text" id="name" class="u-full-width" placeholder="Student Name" />
+          <input type="text" id="batch" class="u-full-width" placeholder="Student Batch" />
+          <input type="text" id="section" class="u-full-width" placeholder="Student Section" />
+          <input type="number" id="eval_score" class="u-full-width" placeholder="Eval Score" />
+          <input type="text" id="image" class="u-full-width" placeholder="Image Url" />
+          <button id="add_student" class="u-full-width button button-primary" onclick="postData()">Add Employees</button>
+          <hr>
+
+          <h4>Update Score</h4>
+          <input type="text" id="new_score"  class="u-full-width" placeholder="Update Score" disabled  placeholder="Student Name" />
+          <hr>
+
+          <h4>Sort Based On Score</h4>
+          <button id="sort-low-to-high"  class="u-full-width button button-primary" placeholder="Student Name" >Sort Low To High</button>
+          <button id="sort-high-to-low"  class="u-full-width button button-primary" placeholder="Student Name" >Sort High To Low</button>
+          <hr>
+  
+          <h4>Filter By Score</h4>
+          <button id="greater-than"  class="u-full-width button button-primary" placeholder="Student Name" >Score >= 5</button>
+          <button id="less-than"  class="u-full-width button button-primary" placeholder="Student Name" >Score < = 5</button>
+          <hr>
+
+        </div>
+        <div class="columns eight main-section" id="main-section">
+          
+        </div>
+      </div>
+
+    </div>
+
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

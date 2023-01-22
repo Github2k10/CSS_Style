@@ -1,0 +1,51 @@
+{
+  "name": "rct-201-e1-boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "config": "^3.3.8",
+    "cypress": "^10.11.0",
+    "cypress-localstorage-commands": "^2.2.1",
+    "dotenv": "^16.0.3",
+    "http-server": "^14.1.1",
+    "json-server": "^0.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "live-server": "^1.2.2",
+    "lowdb": "^5.0.5",
+    "short-unique-id": "^4.4.4",
+    "typescript": "^4.7.4",
+    "web-vitals": "^2.1.4",
+    "start-server-and-test": "^1.14.0"
+  },
+  "scripts": {
+    "start": "http-server",
+    "live": "live-server --port=8080",
+    "cypress:open": "cypress open",
+    "start:all": "npm run server & npm run http",
+    "server": "node server.js",
+    "test": "cypress run --browser chrome",
+    "cypress:run": "cypress run --browser chrome",
+    "watch": "npm run server & npm run live"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "homepage": "."
+}

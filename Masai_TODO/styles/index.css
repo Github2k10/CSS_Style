@@ -1,0 +1,43 @@
+#navbar {
+  border: 1px solid green;
+
+}
+
+#main_container {
+  display: flex;
+}
+
+.sidebar-one {
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+#container {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.student {
+  width: 260px;
+  height: 450px;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+
+.student img {
+  width: 80%;
+  height: 40%;
+  border-bottom: 1px solid gray;
+}
+
+.student div {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
